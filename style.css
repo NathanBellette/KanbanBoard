@@ -44,7 +44,8 @@ ul {  list-style-type: none;  padding: 0;  margin: 0; }
 .card.big input[type=text] {
   font-size: 20px;
   font-weight: bold;
-  }
+}
+  
 .card.big input[type=text]:focus,
 .card.big textarea:focus {
   outline: dashed thin #999;
@@ -90,7 +91,8 @@ ul {  list-style-type: none;  padding: 0;  margin: 0; }
   transition: opacity .25s ease-in;
 }
 .card:hover .card__edit{
-opacity: 1; }
+  opacity: 1; 
+}
 .card__edit a{
   text-decoration: none;
   color: #999;

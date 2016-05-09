@@ -21,10 +21,12 @@ class CardForm extends Component{
                                placeholder="Title"
                                required={true}
                                autoFocus={true} />
+                               <br/>
                          <textarea value={this.props.draftCard.description}
                                    onChange={this.handleChange.bind(this, 'description')}
                                    placeholder="Description"
                                    required={true} />
+                                   <br/>
                          <label htmlFor="status">Status</label>
                          <select id="status"
                                  value={this.props.draftCard.status}
@@ -33,6 +35,7 @@ class CardForm extends Component{
                             <option value="in-progress">In Progress</option>
                             <option value="done">Done</option>
                          </select>
+                         <br />
                         <label htmlFor="color">Color</label>
                         <input id="color"
                                value={this.props.draftCard.color}

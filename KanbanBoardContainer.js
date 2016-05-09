@@ -277,7 +277,7 @@ class KanbanBoardContainer extends Component{
                throw new Error("Server response wasn't ok");
            } 
         })
-        .cath((error) => {
+        .catch((error) => {
             console.error("Fetch error:", error);
             this.setState(prevState);
         });
