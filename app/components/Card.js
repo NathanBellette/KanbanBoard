@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 import marked from 'marked';
 import { DragSource, DropTarget  } from 'react-dnd';
-import constants from './constants';
+import constants from '../constants';
 import CheckList from './CheckList';
 import {Link} from 'react-router';
 
