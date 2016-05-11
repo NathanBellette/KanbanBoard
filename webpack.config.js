@@ -1,6 +1,6 @@
 module.exports = {  
     entry: [    
-        './app.js'  
+        './app/App.js'  
         ],  
         output: {    
             path: __dirname,    
@@ -9,7 +9,11 @@ module.exports = {
         module: {    
             loaders: [{      
                 test: /\.jsx?$/,      
-                loader: 'babel'    
+                loader: 'babel',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015','react']
+                }   
             }]  
         } 
 };
